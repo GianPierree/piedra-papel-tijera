@@ -1,14 +1,22 @@
 #!/usr/bin/python
 #!/usr/bin/env python
 # -*-coding:utf-8-*-
+
+#Importar Librerias
 import Tkinter, tkSimpleDialog
 import time
 from time import sleep
 import random
+
+#GUI para ingresar nuestra variable
 root = Tkinter.Tk()
 root.withdraw()
 sus = "-"*35
+
+#Array piedra-papel-tijera
 depo = ["piedra","papel","tijera"]
+
+#Bucle del juego
 while True:
 	#x = raw_input("Que elijes? piedra, papel o tijera: ")
 	x = tkSimpleDialog.askstring("String", "Que elijes? piedra, papel o tijera:")
